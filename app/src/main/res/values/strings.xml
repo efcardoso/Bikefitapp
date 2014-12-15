@@ -2,17 +2,16 @@
 <resources>
 
     <string name="app_name">Tamanho da Bike</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
 
 <!-- strings do main -->
 
     <string name="texto_cavalo">Informe o cavalo em CM</string>
     <string name="texto_button_calc">Calcular</string>
-    <string name="texto_tamanho_speed">Tamanho Speed: </string>
-    <string name="texto_tamanho_mtb">Tamanho MTB: </string>
+    <string name="texto_tamanho_speed">Speed: </string>
+    <string name="texto_tamanho_mtb">MTB: </string>
+    <string name="erro">Ops! O cavalo não pode ser zero!</string>
 
     <!-- string do menu -->
-    <string name="ajustes">Ajustes</string>
+    <string name="Sobre">Sobre</string>
 
 </resources>

@@ -49,5 +49,6 @@
         android:id="@+id/valor_cavalo"
         android:layout_above="@+id/button_calc"
         android:layout_centerHorizontal="true"
-        android:hint="Informe o cavalo em CM" />
+        android:hint="@string/texto_cavalo"
+        android:gravity="center" />
 </RelativeLayout>

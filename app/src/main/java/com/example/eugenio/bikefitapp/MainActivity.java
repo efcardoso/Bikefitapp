@@ -1,22 +1,17 @@
 package com.example.eugenio.bikefitapp;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
-
-
-//http://www.sanfoundry.com/java-android-program-demonstrate-tip-calculator
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,20 +24,31 @@ public class MainActivity extends ActionBarActivity {
 
         Button calc = (Button) findViewById(R.id.button_calc);
         calc.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
+
+                // para fazer o aplicativo nao dar erro e exibir o toast
+
+                String text = cav.getText().toString();
+
+                if(text.equals("")) {
+
+                    Toast.makeText(MainActivity.this, getResources().getString(R.string.erro), Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+                // continuando o calculo
+
                 double cavalo = Double.parseDouble(cav.getText().toString());
-                double tam_mtb = cavalo * 0.226;
-                double  tam_spd = cavalo * 0.665;
+                double tam_mtb = cavalo * 0.226; // fator da mbt
+                double tam_spd = cavalo * 0.665; // fator da speed
 
-
-                tamanho_mtb.setText("Tamanho MTB: " + Double.toString(tam_mtb));
-                tamanho_speed.setText("Tamanho Speed: " + Double.toString(tam_spd));
-
+                tamanho_mtb.setText("MTB: " + Double.toString(Math.round(tam_mtb))); //exibiçao do resultado ARREDONDADO
+                tamanho_speed.setText("Speed: " + Double.toString(Math.round(tam_spd))); // exibiçao do resultado ARREDONDADO
             }
         });
-
     }
 
 
