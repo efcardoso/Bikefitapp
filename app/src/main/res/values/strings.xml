@@ -3,7 +3,7 @@
 
     <string name="app_name">Tamanho da Bike</string>
 
-<!-- strings do main -->
+    <!-- strings do main -->
 
     <string name="texto_cavalo">Informe o cavalo em CM</string>
     <string name="texto_button_calc">Calcular</string>
@@ -13,5 +13,8 @@
 
     <!-- string do menu -->
     <string name="Sobre">Sobre</string>
+    <string name="title_activity_main_activity2">Sobre</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
