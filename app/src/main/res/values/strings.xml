@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tamanho da Bike</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- strings do main -->
+
+    <string name="texto_cavalo">Informe o cavalo em CM</string>
+    <string name="texto_button_calc">Calcular</string>
+    <string name="texto_tamanho_speed">Tamanho Speed: </string>
+    <string name="texto_tamanho_mtb">Tamanho MTB: </string>
+
+    <!-- string do menu -->
+    <string name="ajustes">Ajustes</string>
+
+</resources>
