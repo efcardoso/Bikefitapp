@@ -6,18 +6,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
     android:id="@+id/title"
-    android:focusableInTouchMode="false"
+    android:focusableInTouchMode="true"
     android:statusBarColor="@color/primaryColorDark"
     android:elevation="2dp"
     android:gravity="center">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/texto_button_calc"
-        android:id="@+id/button_calc"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,5 +43,15 @@
         android:layout_above="@+id/button_calc"
         android:layout_centerHorizontal="true"
         android:hint="@string/texto_cavalo"
-        android:gravity="center" />
+        android:gravity="center"
+        android:focusable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_button_calc"
+        android:id="@+id/button_calc"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
 </RelativeLayout>
